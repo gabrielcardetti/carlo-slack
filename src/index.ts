@@ -1,5 +1,5 @@
-import { SlackApp, SlackEdgeAppEnv, SlackAppContext, AppMentionEvent, SlackAppEnv, SlackAppContextWithOptionalRespond } from "slack-cloudflare-workers";
-import { createWorkersAI, WorkersAI } from 'workers-ai-provider';
+import { SlackApp, SlackEdgeAppEnv, SlackAppContext, AppMentionEvent, SlackAppContextWithOptionalRespond } from "slack-cloudflare-workers";
+import { createWorkersAI } from 'workers-ai-provider';
 import { generateText } from 'ai';
 import { createSlackMessage, formatTicketForSlack } from "./utils";
 
