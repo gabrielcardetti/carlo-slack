@@ -1,0 +1,43 @@
+{
+    "display_information": {
+        "name": "Carlo",
+        "description": "ask me something",
+        "background_color": "#2f3030"
+    },
+    "features": {
+        "bot_user": {
+            "display_name": "Carlo",
+            "always_online": true
+        }
+    },
+    "oauth_config": {
+        "scopes": {
+            "bot": [
+                "app_mentions:read",
+                "chat:write",
+                "chat:write.public",
+                "commands",
+                "channels:history",
+                "groups:history",
+                "mpim:history",
+                "im:history"
+            ]
+        }
+    },
+    "settings": {
+        "event_subscriptions": {
+            "request_url": "......workers.dev",
+            "bot_events": [
+                "app_mention"
+            ]
+        },
+        "interactivity": {
+            "is_enabled": true,
+            "request_url": "......workers.dev/",
+            "message_menu_options_url": "......workers.dev/"
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false
+    }
+}
