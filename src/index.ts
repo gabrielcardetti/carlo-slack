@@ -196,7 +196,7 @@ async function processLinearTicket(context: SlackAppContextWithOptionalRespond, 
     return;
   }
   try {
-    if (thread && autoUpdateMessageInAction) {
+    if (thread && !autoUpdateMessageInAction) {
       await context.client.chat.postMessage({
         channel: context.channelId!,
         thread_ts: thread,
@@ -209,7 +209,7 @@ async function processLinearTicket(context: SlackAppContextWithOptionalRespond, 
 
     await sleep(3); // Simulating ticket creation process
 
-    if (thread && autoUpdateMessageInAction) {
+    if (thread && !autoUpdateMessageInAction) {
       await context.client.chat.postMessage({
         channel: context.channelId!,
         thread_ts: thread,
